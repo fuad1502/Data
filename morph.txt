@@ -38,3 +38,10 @@ N006 (  1,  1) [000006] -----+-----                                     |     | 
  u:1 (last use) $c0
 N008 (  1,  4) [000010] -----+-N---                                     |     \--*  CNS_INT   long   2 $200
 N011 (  1,  4) [000012] -----+-----                                     \--*  CNS_INT   long   16 $202
+
+
+// We can generate two types of trees for "addr":
+//
+//  1) "arrRef + (index + elemOffset)"
+//  2) "(arrRef + elemOffset) + index"
+//
