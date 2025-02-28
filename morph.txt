@@ -1,3 +1,13 @@
+                             ; gcrRegs +[a0]
+IN0001: 000010      lw             a2, 8(a0)
+IN0002: 000014      sext.w         a3, a2
+IN0003: 000018      sext.w         a4, a1
+IN0004: 00001C      bgeu           a4, a3, G_M9971_IG04
+IN0005: 000020      addi           a0, a0, 16
+                             ; gcrRegs -[a0]
+                             ; byrRegs +[a0]
+IN0006: 000024      slli           a1, a1, 32
+IN0007: 000028      srli           a1, a1, 32
 IN0008: 00002C      slli           a1, a1, 2
 IN0009: 000030      add            t6, a0, a1
                              ; byrRegs +[t6]
