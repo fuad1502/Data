@@ -1,0 +1,450 @@
+; Assembly listing for method Program:Fun():ulong:this (FullOpts)
+; Emitting BLENDED_CODE for generic RISCV64 - Unix
+; FullOpts code
+; optimized code
+; fp based frame
+; partially interruptible
+; No PGO data
+; Final local variable assignments
+;
+;* V00 this         [V00    ] (  0,  0   )     ref  ->  zero-ref    this class-hnd single-def <Program>
+;# V01 OutArgs      [V01    ] (  1,  1   )  struct ( 0) [sp+0x00]   do-not-enreg[XS] addr-exposed "OutgoingArgSpace" <Em
+pty>
+;
+; Lcl frame size = 0
+Frame info. #outsz=0; #framesz=16; lcl=0
+
+G_M41041_IG01:  ;; offset=0x0000
+            addi           sp, sp, -16
+            sd             fp, 0(sp)
+            sd             ra, 8(sp)
+            mv             fp, sp
+                                                ;; size=16 bbWeight=1 PerfScore 0.00
+G_M41041_IG02:  ;; offset=0x0010
+            lui            a0, -524288
+            addiw          a0, a0, -1
+            slli           a0, a0, 11
+            addi           a0, a0, 2047
+            slli           a0, a0, 11
+            addi           a0, a0, 2047
+            slli           a0, a0, 9
+            addi           a0, a0, 510
+                                                ;; size=32 bbWeight=1 PerfScore 0.00
+G_M41041_IG03:  ;; offset=0x0030
+            ld             ra, 8(sp)
+            ld             fp, 0(sp)
+            addi           sp, sp, 16
+            ret                                         ;; size=16 bbWeight=1 PerfScore 0.00
+
+; Total bytes of code 64, prolog size 16, PerfScore 0.00, instruction count 16, allocated bytes for code 64 (MethodHash=
+39335fae) for method Program:Fun():ulong:this (FullOpts)
+; ============================================================
+
+3FFFFFFFFFFFFFFE
+; Assembly listing for method Program:Fun1():ulong:this (FullOpts)
+; Emitting BLENDED_CODE for generic RISCV64 - Unix
+; FullOpts code
+; optimized code
+; fp based frame
+; partially interruptible
+; No PGO data
+; Final local variable assignments
+;
+;* V00 this         [V00    ] (  0,  0   )     ref  ->  zero-ref    this class-hnd single-def <Program>
+;# V01 OutArgs      [V01    ] (  1,  1   )  struct ( 0) [sp+0x00]   do-not-enreg[XS] addr-exposed "OutgoingArgSpace" <Em
+pty>
+;
+; Lcl frame size = 0
+Frame info. #outsz=0; #framesz=16; lcl=0
+
+G_M18496_IG01:  ;; offset=0x0000
+            addi           sp, sp, -16
+            sd             fp, 0(sp)
+            sd             ra, 8(sp)
+            mv             fp, sp
+                                                ;; size=16 bbWeight=1 PerfScore 0.00
+G_M18496_IG02:  ;; offset=0x0010
+            lui            a0, 523812
+            addiw          a0, a0, 1674
+            slli           a0, a0, 11
+            addi           a0, a0, 1648
+            slli           a0, a0, 12
+                                                ;; size=20 bbWeight=1 PerfScore 0.00
+G_M18496_IG03:  ;; offset=0x0024
+            ld             ra, 8(sp)
+            ld             fp, 0(sp)
+            addi           sp, sp, 16
+            ret                                         ;; size=16 bbWeight=1 PerfScore 0.00
+
+; Total bytes of code 52, prolog size 16, PerfScore 0.00, instruction count 13, allocated bytes for code 52 (MethodHash=
+b059b7bf) for method Program:Fun1():ulong:this (FullOpts)
+; ============================================================
+
+003FF12345670000
+; Assembly listing for method Program:Fun2():ulong:this (FullOpts)
+; Emitting BLENDED_CODE for generic RISCV64 - Unix
+; FullOpts code
+; optimized code
+; fp based frame
+; partially interruptible
+; No PGO data
+; Final local variable assignments
+;
+;* V00 this         [V00    ] (  0,  0   )     ref  ->  zero-ref    this class-hnd single-def <Program>
+;# V01 OutArgs      [V01    ] (  1,  1   )  struct ( 0) [sp+0x00]   do-not-enreg[XS] addr-exposed "OutgoingArgSpace" <Em
+pty>
+;
+; Lcl frame size = 0
+Frame info. #outsz=0; #framesz=16; lcl=0
+
+G_M32419_IG01:  ;; offset=0x0000
+            addi           sp, sp, -16
+            sd             fp, 0(sp)
+            sd             ra, 8(sp)
+            mv             fp, sp
+                                                ;; size=16 bbWeight=1 PerfScore 0.00
+G_M32419_IG02:  ;; offset=0x0010
+            lui            a0, 523812
+            addiw          a0, a0, 1674
+            slli           a0, a0, 11
+            addi           a0, a0, 1648
+            slli           a0, a0, 8
+                                                ;; size=20 bbWeight=1 PerfScore 0.00
+G_M32419_IG03:  ;; offset=0x0024
+            ld             ra, 8(sp)
+            ld             fp, 0(sp)
+            addi           sp, sp, 16
+            ret                                         ;; size=16 bbWeight=1 PerfScore 0.00
+
+; Total bytes of code 52, prolog size 16, PerfScore 0.00, instruction count 13, allocated bytes for code 52 (MethodHash=
+601d815c) for method Program:Fun2():ulong:this (FullOpts)
+; ============================================================
+
+0003FF1234567000
+; Assembly listing for method Program:Fun3():ulong:this (FullOpts)
+; Emitting BLENDED_CODE for generic RISCV64 - Unix
+; FullOpts code
+; optimized code
+; fp based frame
+; partially interruptible
+; No PGO data
+; Final local variable assignments
+;
+;* V00 this         [V00    ] (  0,  0   )     ref  ->  zero-ref    this class-hnd single-def <Program>
+;# V01 OutArgs      [V01    ] (  1,  1   )  struct ( 0) [sp+0x00]   do-not-enreg[XS] addr-exposed "OutgoingArgSpace" <Em
+pty>
+;
+; Lcl frame size = 0
+Frame info. #outsz=0; #framesz=16; lcl=0
+
+G_M34434_IG01:  ;; offset=0x0000
+            addi           sp, sp, -16
+            sd             fp, 0(sp)
+            sd             ra, 8(sp)
+            mv             fp, sp
+                                                ;; size=16 bbWeight=1 PerfScore 0.00
+G_M34434_IG02:  ;; offset=0x0010
+            lui            a0, 523812
+            addiw          a0, a0, 1674
+            slli           a0, a0, 7
+            addi           a0, a0, 103
+                                                ;; size=16 bbWeight=1 PerfScore 0.00
+G_M34434_IG03:  ;; offset=0x0020
+            ld             ra, 8(sp)
+            ld             fp, 0(sp)
+            addi           sp, sp, 16
+            ret                                         ;; size=16 bbWeight=1 PerfScore 0.00
+
+; Total bytes of code 48, prolog size 16, PerfScore 0.00, instruction count 12, allocated bytes for code 48 (MethodHash=
+0809797d) for method Program:Fun3():ulong:this (FullOpts)
+; ============================================================
+
+0000003FF1234567
+; Assembly listing for method Program:Fun4():ulong:this (FullOpts)
+; Emitting BLENDED_CODE for generic RISCV64 - Unix
+; FullOpts code
+; optimized code
+; fp based frame
+; partially interruptible
+; No PGO data
+; Final local variable assignments
+;
+;* V00 this         [V00    ] (  0,  0   )     ref  ->  zero-ref    this class-hnd single-def <Program>
+;# V01 OutArgs      [V01    ] (  1,  1   )  struct ( 0) [sp+0x00]   do-not-enreg[XS] addr-exposed "OutgoingArgSpace" <Em
+pty>
+;
+; Lcl frame size = 0
+Frame info. #outsz=0; #framesz=16; lcl=0
+
+G_M33509_IG01:  ;; offset=0x0000
+            addi           sp, sp, -16
+            sd             fp, 0(sp)
+            sd             ra, 8(sp)
+            mv             fp, sp
+                                                ;; size=16 bbWeight=1 PerfScore 0.00
+G_M33509_IG02:  ;; offset=0x0010
+            lui            a0, -524288
+            addiw          a0, a0, -1
+            slli           a0, a0, 11
+            addi           a0, a0, 1988
+            slli           a0, a0, 11
+            addi           a0, a0, 1128
+            slli           a0, a0, 11
+            addi           a0, a0, 1383
+                                                ;; size=32 bbWeight=1 PerfScore 0.00
+G_M33509_IG03:  ;; offset=0x0030
+            ld             ra, 8(sp)
+            ld             fp, 0(sp)
+            addi           sp, sp, 16
+            ret                                         ;; size=16 bbWeight=1 PerfScore 0.00
+
+; Total bytes of code 64, prolog size 16, PerfScore 0.00, instruction count 16, allocated bytes for code 64 (MethodHash=
+a4bf7d1a) for method Program:Fun4():ulong:this (FullOpts)
+; ============================================================
+
+FFFFFFFFF1234567
+; Assembly listing for method Program:Fun6():ulong:this (FullOpts)
+; Emitting BLENDED_CODE for generic RISCV64 - Unix
+; FullOpts code
+; optimized code
+; fp based frame
+; partially interruptible
+; No PGO data
+; Final local variable assignments
+;
+;* V00 this         [V00    ] (  0,  0   )     ref  ->  zero-ref    this class-hnd single-def <Program>
+;# V01 OutArgs      [V01    ] (  1,  1   )  struct ( 0) [sp+0x00]   do-not-enreg[XS] addr-exposed "OutgoingArgSpace" <Em
+pty>
+;
+; Lcl frame size = 0
+Frame info. #outsz=0; #framesz=16; lcl=0
+
+G_M49447_IG01:  ;; offset=0x0000
+            addi           sp, sp, -16
+            sd             fp, 0(sp)
+            sd             ra, 8(sp)
+            mv             fp, sp
+                                                ;; size=16 bbWeight=1 PerfScore 0.00
+G_M49447_IG02:  ;; offset=0x0010
+            lui            a0, -524288
+            addiw          a0, a0, -9
+            slli           a0, a0, 11
+            addi           a0, a0, 1727
+            slli           a0, a0, 11
+            addi           a0, a0, 2047
+            slli           a0, a0, 11
+            addi           a0, a0, 2047
+                                                ;; size=32 bbWeight=1 PerfScore 0.00
+G_M49447_IG03:  ;; offset=0x0030
+            ld             ra, 8(sp)
+            ld             fp, 0(sp)
+            addi           sp, sp, 16
+            ret                                         ;; size=16 bbWeight=1 PerfScore 0.00
+
+; Total bytes of code 64, prolog size 16, PerfScore 0.00, instruction count 16, allocated bytes for code 64 (MethodHash=
+fc6f3ed8) for method Program:Fun6():ulong:this (FullOpts)
+; ============================================================
+
+FFFFFFEFAFFFFFFF
+; Assembly listing for method Program:Fun7():ulong:this (FullOpts)
+; Emitting BLENDED_CODE for generic RISCV64 - Unix
+; FullOpts code
+; optimized code
+; fp based frame
+; partially interruptible
+; No PGO data
+; Final local variable assignments
+;
+;* V00 this         [V00    ] (  0,  0   )     ref  ->  zero-ref    this class-hnd single-def <Program>
+;# V01 OutArgs      [V01    ] (  1,  1   )  struct ( 0) [sp+0x00]   do-not-enreg[XS] addr-exposed "OutgoingArgSpace" <Em
+pty>
+;
+; Lcl frame size = 0
+Frame info. #outsz=0; #framesz=16; lcl=0
+
+G_M51462_IG01:  ;; offset=0x0000
+            addi           sp, sp, -16
+            sd             fp, 0(sp)
+            sd             ra, 8(sp)
+            mv             fp, sp
+                                                ;; size=16 bbWeight=1 PerfScore 0.00
+G_M51462_IG02:  ;; offset=0x0010
+            lui            a0, 327770
+            addiw          a0, a0, -129
+            slli           a0, a0, 11
+            addi           a0, a0, 2047
+            slli           a0, a0, 11
+            addi           a0, a0, 2047
+            slli           a0, a0, 11
+            addi           a0, a0, 2042
+                                                ;; size=32 bbWeight=1 PerfScore 0.00
+G_M51462_IG03:  ;; offset=0x0030
+            ld             ra, 8(sp)
+            ld             fp, 0(sp)
+            addi           sp, sp, 16
+            ret                                         ;; size=16 bbWeight=1 PerfScore 0.00
+
+; Total bytes of code 64, prolog size 16, PerfScore 0.00, instruction count 16, allocated bytes for code 64 (MethodHash=
+a45b36f9) for method Program:Fun7():ulong:this (FullOpts)
+; ============================================================
+
+A00B3EFFFFFFFFFA
+; Assembly listing for method Program:Fun8():ulong:this (FullOpts)
+; Emitting BLENDED_CODE for generic RISCV64 - Unix
+; FullOpts code
+; optimized code
+; fp based frame
+; partially interruptible
+; No PGO data
+; Final local variable assignments
+;
+;* V00 this         [V00    ] (  0,  0   )     ref  ->  zero-ref    this class-hnd single-def <Program>
+;# V01 OutArgs      [V01    ] (  1,  1   )  struct ( 0) [sp+0x00]   do-not-enreg[XS] addr-exposed "OutgoingArgSpace" <Em
+pty>
+;
+; Lcl frame size = 0
+Frame info. #outsz=0; #framesz=16; lcl=0
+
+G_M16745_IG01:  ;; offset=0x0000
+            addi           sp, sp, -16
+            sd             fp, 0(sp)
+            sd             ra, 8(sp)
+            mv             fp, sp
+                                                ;; size=16 bbWeight=1 PerfScore 0.00
+G_M16745_IG02:  ;; offset=0x0010
+            lui            a0, 351853
+            addiw          a0, a0, 1510
+            slli           a0, a0, 11
+            addi           a0, a0, 1711
+            slli           a0, a0, 11
+            addi           a0, a0, 437
+            slli           a0, a0, 11
+            addi           a0, a0, 973
+                                                ;; size=32 bbWeight=1 PerfScore 0.00
+G_M16745_IG03:  ;; offset=0x0030
+            ld             ra, 8(sp)
+            ld             fp, 0(sp)
+            addi           sp, sp, 16
+            ret                                         ;; size=16 bbWeight=1 PerfScore 0.00
+
+; Total bytes of code 64, prolog size 16, PerfScore 0.00, instruction count 16, allocated bytes for code 64 (MethodHash=
+f815be96) for method Program:Fun8():ulong:this (FullOpts)
+; ============================================================
+
+ABCDABCDABCDABCD
+; Assembly listing for method Program:Fun9():ulong:this (FullOpts)
+; Emitting BLENDED_CODE for generic RISCV64 - Unix
+; FullOpts code
+; optimized code
+; fp based frame
+; partially interruptible
+; No PGO data
+; Final local variable assignments
+;
+;* V00 this         [V00    ] (  0,  0   )     ref  ->  zero-ref    this class-hnd single-def <Program>
+;# V01 OutArgs      [V01    ] (  1,  1   )  struct ( 0) [sp+0x00]   do-not-enreg[XS] addr-exposed "OutgoingArgSpace" <Em
+pty>
+;
+; Lcl frame size = 0
+Frame info. #outsz=0; #framesz=16; lcl=0
+
+G_M18760_IG01:  ;; offset=0x0000
+            addi           sp, sp, -16
+            sd             fp, 0(sp)
+            sd             ra, 8(sp)
+            mv             fp, sp
+                                                ;; size=16 bbWeight=1 PerfScore 0.00
+G_M18760_IG02:  ;; offset=0x0010
+            lui            a0, 262144
+            slli           a0, a0, 30
+                                                ;; size=8 bbWeight=1 PerfScore 0.00
+G_M18760_IG03:  ;; offset=0x0018
+            ld             ra, 8(sp)
+            ld             fp, 0(sp)
+            addi           sp, sp, 16
+            ret                                         ;; size=16 bbWeight=1 PerfScore 0.00
+
+; Total bytes of code 40, prolog size 16, PerfScore 0.00, instruction count 10, allocated bytes for code 40 (MethodHash=
+a001b6b7) for method Program:Fun9():ulong:this (FullOpts)
+; ============================================================
+
+1000000000000000
+; Assembly listing for method Program:Fun10():ulong:this (FullOpts)
+; Emitting BLENDED_CODE for generic RISCV64 - Unix
+; FullOpts code
+; optimized code
+; fp based frame
+; partially interruptible
+; No PGO data
+; Final local variable assignments
+;
+;* V00 this         [V00    ] (  0,  0   )     ref  ->  zero-ref    this class-hnd single-def <Program>
+;# V01 OutArgs      [V01    ] (  1,  1   )  struct ( 0) [sp+0x00]   do-not-enreg[XS] addr-exposed "OutgoingArgSpace" <Em
+pty>
+;
+; Lcl frame size = 0
+Frame info. #outsz=0; #framesz=16; lcl=0
+
+G_M11536_IG01:  ;; offset=0x0000
+            addi           sp, sp, -16
+            sd             fp, 0(sp)
+            sd             ra, 8(sp)
+            mv             fp, sp
+                                                ;; size=16 bbWeight=1 PerfScore 0.00
+G_M11536_IG02:  ;; offset=0x0010
+            lui            a0, 298260
+            addiw          a0, a0, 1164
+            slli           a0, a0, 11
+            addi           a0, a0, 36
+            slli           a0, a0, 3
+            addi           a0, a0, 3
+                                                ;; size=24 bbWeight=1 PerfScore 0.00
+G_M11536_IG03:  ;; offset=0x0028
+            ld             ra, 8(sp)
+            ld             fp, 0(sp)
+            addi           sp, sp, 16
+            ret                                         ;; size=16 bbWeight=1 PerfScore 0.00
+
+; Total bytes of code 56, prolog size 16, PerfScore 0.00, instruction count 14, allocated bytes for code 56 (MethodHash=
+6134d2ef) for method Program:Fun10():ulong:this (FullOpts)
+; ============================================================
+
+0000123451230123
+; Assembly listing for method Program:Fun11():ulong:this (FullOpts)
+; Emitting BLENDED_CODE for generic RISCV64 - Unix
+; FullOpts code
+; optimized code
+; fp based frame
+; partially interruptible
+; No PGO data
+; Final local variable assignments
+;
+;* V00 this         [V00    ] (  0,  0   )     ref  ->  zero-ref    this class-hnd single-def <Program>
+;# V01 OutArgs      [V01    ] (  1,  1   )  struct ( 0) [sp+0x00]   do-not-enreg[XS] addr-exposed "OutgoingArgSpace" <Em
+pty>
+;
+; Lcl frame size = 0
+Frame info. #outsz=0; #framesz=16; lcl=0
+
+G_M9521_IG01:  ;; offset=0x0000
+            addi           sp, sp, -16
+            sd             fp, 0(sp)
+            sd             ra, 8(sp)
+            mv             fp, sp
+                                                ;; size=16 bbWeight=1 PerfScore 0.00
+G_M9521_IG02:  ;; offset=0x0010
+            lui            a0, -524288
+            addiw          a0, a0, -2048
+                                                ;; size=8 bbWeight=1 PerfScore 0.00
+G_M9521_IG03:  ;; offset=0x0018
+            ld             ra, 8(sp)
+            ld             fp, 0(sp)
+            addi           sp, sp, 16
+            ret                                         ;; size=16 bbWeight=1 PerfScore 0.00
+
+; Total bytes of code 40, prolog size 16, PerfScore 0.00, instruction count 10, allocated bytes for code 40 (MethodHash=
+b948dace) for method Program:Fun11():ulong:this (FullOpts)
+; ============================================================
+
+000000007FFFF800
+
