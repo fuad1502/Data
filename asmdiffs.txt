@@ -1,0 +1,134 @@
+Diffs are based on <span style="color:#1460aa">12,732</span> contexts (<span style="color:#1460aa">10,221</span> MinOpts, <span style="color:#1460aa">2,511</span> FullOpts).
+
+
+<details>
+<summary>Overall (<span style="color:green">-864,616</span> bytes)</summary>
+<div style="margin-left:1em">
+
+|Collection|Base size (bytes)|Diff size (bytes)|PerfScore in Diffs
+|---|--:|--:|--:|
+|test.mch|6,988,012|<span style="color:green">-864,616</span>|0.00%|
+
+
+</div></details>
+
+<details>
+<summary>MinOpts (<span style="color:green">-663,824</span> bytes)</summary>
+<div style="margin-left:1em">
+
+|Collection|Base size (bytes)|Diff size (bytes)|PerfScore in Diffs
+|---|--:|--:|--:|
+|test.mch|5,353,608|<span style="color:green">-663,824</span>|0.00%|
+
+
+</div></details>
+
+<details>
+<summary>FullOpts (<span style="color:green">-200,792</span> bytes)</summary>
+<div style="margin-left:1em">
+
+|Collection|Base size (bytes)|Diff size (bytes)|PerfScore in Diffs
+|---|--:|--:|--:|
+|test.mch|1,634,404|<span style="color:green">-200,792</span>|0.00%|
+
+
+</div></details>
+
+<details>
+<summary>Example diffs</summary>
+<div style="margin-left:1em">
+
+
+<details>
+<summary>test.mch</summary>
+<div style="margin-left:1em">
+
+
+<details>
+<summary><span style="color:green">-48</span> (<span style="color:green">-38.71%</span>) : 198.dasm - System.ConsolePal:InvalidateCachedCursorPosition() (Tier0)</summary>
+<div style="margin-left:1em">
+
+Could not find a git executable in PATH
+
+</div></details>
+
+<details>
+<summary><span style="color:green">-48</span> (<span style="color:green">-37.50%</span>) : 293.dasm - System.Runtime.InteropServices.Marshal:SetLastSystemError(int) (Tier1)</summary>
+<div style="margin-left:1em">
+
+Could not find a git executable in PATH
+
+</div></details>
+
+<details>
+<summary><span style="color:green">-48</span> (<span style="color:green">-37.50%</span>) : 134.dasm - System.Runtime.InteropServices.Marshal:GetLastSystemError():int (Instrumented Tier1)</summary>
+<div style="margin-left:1em">
+
+Could not find a git executable in PATH
+
+</div></details>
+
+<details>
+<summary>+0 (0.00%) : 12720.dasm - System.String:CompareOrdinal(System.String,System.String):int (Tier1)</summary>
+<div style="margin-left:1em">
+
+Could not find a git executable in PATH
+
+</div></details>
+
+<details>
+<summary>+0 (0.00%) : 12704.dasm - System.Collections.Generic.List`1+Enumerator[System.__Canon]:MoveNext():ubyte:this (Tier1)</summary>
+<div style="margin-left:1em">
+
+Could not find a git executable in PATH
+
+</div></details>
+
+<details>
+<summary>+0 (0.00%) : 12688.dasm - System.Linq.Enumerable+EnumerableSorter`2[System.__Canon,System.__Canon]:.ctor(System.Func`2[System.__Canon,System.__Canon],System.Collections.Generic.IComparer`1[System.__Canon],ubyte,System.Linq.Enumerable+EnumerableSorter`1[System.__Canon]):this (Tier0)</summary>
+<div style="margin-left:1em">
+
+Could not find a git executable in PATH
+
+</div></details>
+
+
+</div></details>
+
+
+</div></details>
+
+<details>
+<summary>Details</summary>
+<div style="margin-left:1em">
+
+#### Size improvements/regressions per collection
+
+|Collection|Contexts with diffs|Improvements|Regressions|Same size|Improvements (bytes)|Regressions (bytes)|
+|---|--:|--:|--:|--:|--:|--:|
+|test.mch|10,186|<span style="color:green">6,929</span>|<span style="color:red">0</span>|<span style="color:blue">3,257</span>|<span style="color:green">-864,616</span>|<span style="color:red">+0</span>|
+
+---
+
+#### PerfScore improvements/regressions per collection
+
+|Collection|Contexts with diffs|Improvements|Regressions|Same PerfScore|Improvements (PerfScore)|Regressions (PerfScore)|PerfScore Overall in FullOpts|
+|---|--:|--:|--:|--:|--:|--:|--:|
+|test.mch|10,186|<span style="color:green">0</span>|<span style="color:red">0</span>|<span style="color:blue">10,186</span>|0.00%|0.00%|0.0000%|
+
+---
+
+#### Context information
+
+|Collection|Diffed contexts|MinOpts|FullOpts|Missed, base|Missed, diff|
+|---|--:|--:|--:|--:|--:|
+|test.mch|12,732|10,221|2,511|0 (0.00%)|0 (0.00%)|
+
+
+---
+
+#### jit-analyze output
+
+
+</div></details>
+
