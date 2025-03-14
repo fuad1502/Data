@@ -1,35 +1,35 @@
-Diffs are based on <span style="color:#1460aa">12,732</span> contexts (<span style="color:#1460aa">10,221</span> MinOpts, <span style="color:#1460aa">2,511</span> FullOpts).
+Diffs are based on <span style="color:#1460aa">12,733</span> contexts (<span style="color:#1460aa">10,207</span> MinOpts, <span style="color:#1460aa">2,526</span> FullOpts).
 
 
 <details>
-<summary>Overall (<span style="color:green">-864,616</span> bytes)</summary>
+<summary>Overall (<span style="color:green">-925,312</span> bytes)</summary>
 <div style="margin-left:1em">
 
 |Collection|Base size (bytes)|Diff size (bytes)|PerfScore in Diffs
 |---|--:|--:|--:|
-|test.mch|6,988,012|<span style="color:green">-864,616</span>|0.00%|
+|test.mch|7,017,068|<span style="color:green">-925,312</span>|0.00%|
 
 
 </div></details>
 
 <details>
-<summary>MinOpts (<span style="color:green">-663,824</span> bytes)</summary>
+<summary>MinOpts (<span style="color:green">-720,276</span> bytes)</summary>
 <div style="margin-left:1em">
 
 |Collection|Base size (bytes)|Diff size (bytes)|PerfScore in Diffs
 |---|--:|--:|--:|
-|test.mch|5,353,608|<span style="color:green">-663,824</span>|0.00%|
+|test.mch|5,365,436|<span style="color:green">-720,276</span>|0.00%|
 
 
 </div></details>
 
 <details>
-<summary>FullOpts (<span style="color:green">-200,792</span> bytes)</summary>
+<summary>FullOpts (<span style="color:green">-205,036</span> bytes)</summary>
 <div style="margin-left:1em">
 
 |Collection|Base size (bytes)|Diff size (bytes)|PerfScore in Diffs
 |---|--:|--:|--:|
-|test.mch|1,634,404|<span style="color:green">-200,792</span>|0.00%|
+|test.mch|1,651,632|<span style="color:green">-205,036</span>|0.00%|
 
 
 </div></details>
@@ -45,50 +45,273 @@ Diffs are based on <span style="color:#1460aa">12,732</span> contexts (<span sty
 
 
 <details>
-<summary><span style="color:green">-48</span> (<span style="color:green">-38.71%</span>) : 198.dasm - System.ConsolePal:InvalidateCachedCursorPosition() (Tier0)</summary>
+<summary><span style="color:green">-48</span> (<span style="color:green">-38.71%</span>) : 452.dasm - System.ConsolePal:InvalidateCachedCursorPosition() (Tier1)</summary>
 <div style="margin-left:1em">
 
-Could not find a git executable in PATH
+```diff
+@@ -22,36 +22,27 @@ G_M58234_IG01:        ; bbWeight=1, gcrefRegs=0000 {}, byrefRegs=0000 {}, byref,
+ 						;; size=16 bbWeight=1 PerfScore 0.00
+ G_M58234_IG02:        ; bbWeight=1, gcrefRegs=0000 {}, byrefRegs=0000 {}, byref
+             addi           a0, zero, 0xD1FFAB1E
+-            lui            a1, 0xD1FFAB1E
+-            addiw          a1, a1, 0xD1FFAB1E
+-            slli           a1, a1, 11
+-            addi           a1, a1, 0xD1FFAB1E
+-            slli           a1, a1, 5
+-            addi           a1, a1, 0xD1FFAB1E
++            auipc          t6, 0xD1FFAB1E
++            ld             a1, 0xD1FFAB1E(t6)
+             sw             a0, 0xD1FFAB1E(a1)
+-            lui            a0, 0xD1FFAB1E
+-            addiw          a0, a0, 0xD1FFAB1E
+-            slli           a0, a0, 11
+-            addi           a0, a0, 0xD1FFAB1E
+-            slli           a0, a0, 5
+-            addi           a0, a0, 0xD1FFAB1E
++            auipc          t6, 0xD1FFAB1E
++            ld             a0, 0xD1FFAB1E(t6)
+             lw             a0, 0xD1FFAB1E(a0)
+             addiw          a0, a0, 0xD1FFAB1E
+-            lui            a1, 0xD1FFAB1E
+-            addiw          a1, a1, 0xD1FFAB1E
+-            slli           a1, a1, 11
+-            addi           a1, a1, 0xD1FFAB1E
+-            slli           a1, a1, 5
+-            addi           a1, a1, 0xD1FFAB1E
++            auipc          t6, 0xD1FFAB1E
++            ld             a1, 0xD1FFAB1E(t6)
+             sw             a0, 0xD1FFAB1E(a1)
+-						;; size=92 bbWeight=1 PerfScore 0.00
++						;; size=44 bbWeight=1 PerfScore 0.00
+ G_M58234_IG03:        ; bbWeight=1, epilog, nogc, extend
+             ld             ra, 8(sp)
+             ld             fp, 0(sp)
+             addi           sp, sp, 16
+             ret						;; size=16 bbWeight=1 PerfScore 0.00
++RWD00  	dq	0000728891C2B30Ch
++RWD08  	dq	0000728891C2B308h
+ 
+-; Total bytes of code 124, prolog size 16, PerfScore 0.00, instruction count 31, allocated bytes for code 124 (MethodHash=d4221c85) for method System.ConsolePal:InvalidateCachedCursorPosition() (Tier1)
++
++; Total bytes of code 76, prolog size 16, PerfScore 0.00, instruction count 16, allocated bytes for code 76 (MethodHash=d4221c85) for method System.ConsolePal:InvalidateCachedCursorPosition() (Tier1)
+ ; ============================================================
+ 
+ Unwind Info:
+@@ -62,7 +53,7 @@ Unwind Info:
+   E bit             : 0
+   X bit             : 0
+   Vers              : 0
+-  Function Length   : 31 (0x0001f) Actual length = 124 (0x00007c)
++  Function Length   : 19 (0x00013) Actual length = 76 (0x00004c)
+   ---- Epilog scopes ----
+   ---- Scope 0
+   Epilog Start Offset        : 3523193630 (0xd1ffab1e) Actual offset = 3523193630 (0xd1ffab1e) Offset from main function begin = 3523193630 (0xd1ffab1e)
+```
 
 </div></details>
 
 <details>
-<summary><span style="color:green">-48</span> (<span style="color:green">-37.50%</span>) : 293.dasm - System.Runtime.InteropServices.Marshal:SetLastSystemError(int) (Tier1)</summary>
+<summary><span style="color:green">-32</span> (<span style="color:green">-38.10%</span>) : 4384.dasm - System.Reflection.Emit.AssemblyBuilder:EnsureDynamicCodeSupported() (Instrumented Tier1)</summary>
 <div style="margin-left:1em">
 
-Could not find a git executable in PATH
+```diff
+@@ -21,27 +21,22 @@ G_M54891_IG01:        ; bbWeight=1, gcrefRegs=0000 {}, byrefRegs=0000 {}, byref,
+             mv             fp, sp, 
+ 						;; size=16 bbWeight=1 PerfScore 0.00
+ G_M54891_IG02:        ; bbWeight=1, gcrefRegs=0000 {}, byrefRegs=0000 {}, byref
+-            lui            a0, 0xD1FFAB1E
+-            addiw          a0, a0, 0xD1FFAB1E
+-            slli           a0, a0, 11
+-            addi           a0, a0, 0xD1FFAB1E
+-            slli           a0, a0, 5
+-            addi           a0, a0, 0xD1FFAB1E
+-            lui            a1, 0xD1FFAB1E
+-            addiw          a1, a1, 0xD1FFAB1E
+-            slli           a1, a1, 11
+-            addi           a1, a1, 0xD1FFAB1E
+-            slli           a1, a1, 5
+-            addi           a1, a1, 0xD1FFAB1E
++            auipc          t6, 0xD1FFAB1E
++            ld             a0, 0xD1FFAB1E(t6)
++            auipc          t6, 0xD1FFAB1E
++            ld             a1, 0xD1FFAB1E(t6)
+             jalr           a1		// CORINFO_HELP_COUNTPROFILE32
+-						;; size=52 bbWeight=1 PerfScore 0.00
++						;; size=20 bbWeight=1 PerfScore 0.00
+ G_M54891_IG03:        ; bbWeight=1, epilog, nogc, extend
+             ld             ra, 8(sp)
+             ld             fp, 0(sp)
+             addi           sp, sp, 16
+             ret						;; size=16 bbWeight=1 PerfScore 0.00
++RWD00  	dq	000075BF70F3BEB8h
++RWD08  	dq	000075BFEBAB2FBCh
+ 
+-; Total bytes of code 84, prolog size 16, PerfScore 0.00, instruction count 21, allocated bytes for code 84 (MethodHash=2bdc2994) for method System.Reflection.Emit.AssemblyBuilder:EnsureDynamicCodeSupported() (Instrumented Tier1)
++
++; Total bytes of code 52, prolog size 16, PerfScore 0.00, instruction count 11, allocated bytes for code 52 (MethodHash=2bdc2994) for method System.Reflection.Emit.AssemblyBuilder:EnsureDynamicCodeSupported() (Instrumented Tier1)
+ ; ============================================================
+ 
+ Unwind Info:
+@@ -52,7 +47,7 @@ Unwind Info:
+   E bit             : 0
+   X bit             : 0
+   Vers              : 0
+-  Function Length   : 21 (0x00015) Actual length = 84 (0x000054)
++  Function Length   : 13 (0x0000d) Actual length = 52 (0x000034)
+   ---- Epilog scopes ----
+   ---- Scope 0
+   Epilog Start Offset        : 3523193630 (0xd1ffab1e) Actual offset = 3523193630 (0xd1ffab1e) Offset from main function begin = 3523193630 (0xd1ffab1e)
+```
 
 </div></details>
 
 <details>
-<summary><span style="color:green">-48</span> (<span style="color:green">-37.50%</span>) : 134.dasm - System.Runtime.InteropServices.Marshal:GetLastSystemError():int (Instrumented Tier1)</summary>
+<summary><span style="color:green">-48</span> (<span style="color:green">-37.50%</span>) : 275.dasm - System.Runtime.InteropServices.Marshal:GetLastSystemError():int (Tier1)</summary>
 <div style="margin-left:1em">
 
-Could not find a git executable in PATH
+```diff
+@@ -21,24 +21,16 @@ G_M14595_IG01:        ; bbWeight=1, gcrefRegs=0000 {}, byrefRegs=0000 {}, byref,
+             mv             fp, sp, 
+ 						;; size=16 bbWeight=1 PerfScore 0.00
+ G_M14595_IG02:        ; bbWeight=1, gcrefRegs=0000 {}, byrefRegs=0000 {}, byref
+-            lui            a0, 0xD1FFAB1E
+-            addiw          a0, a0, 0xD1FFAB1E
+-            slli           a0, a0, 11
+-            addi           a0, a0, 0xD1FFAB1E
+-            slli           a0, a0, 5
+-            addi           a0, a0, 0xD1FFAB1E
++            auipc          t6, 0xD1FFAB1E
++            ld             a0, 0xD1FFAB1E(t6)
+             lw             a0, 0xD1FFAB1E(a0)
+             sext.w         t6, a0
+             bnez           t6, G_M14595_IG06
+-						;; size=36 bbWeight=1 PerfScore 0.00
++						;; size=20 bbWeight=1 PerfScore 0.00
+ G_M14595_IG03:        ; bbWeight=1, gcrefRegs=0000 {}, byrefRegs=0000 {}, byref
+-            lui            a0, 0xD1FFAB1E
+-            addiw          a0, a0, 0xD1FFAB1E
+-            slli           a0, a0, 11
+-            addi           a0, a0, 0xD1FFAB1E
+-            slli           a0, a0, 5
+-            addi           a0, a0, 0xD1FFAB1E
+-						;; size=24 bbWeight=1 PerfScore 0.00
++            auipc          t6, 0xD1FFAB1E
++            ld             a0, 0xD1FFAB1E(t6)
++						;; size=8 bbWeight=1 PerfScore 0.00
+ G_M14595_IG04:        ; bbWeight=1, gcrefRegs=0000 {}, byrefRegs=0000 {}, byref
+             jalr           a0		// <unknown method>
+ 						;; size=4 bbWeight=1 PerfScore 0.00
+@@ -48,17 +40,17 @@ G_M14595_IG05:        ; bbWeight=1, epilog, nogc, extend
+             addi           sp, sp, 16
+             ret						;; size=16 bbWeight=1 PerfScore 0.00
+ G_M14595_IG06:        ; bbWeight=0, gcVars=0000000000000000 {}, gcrefRegs=0000 {}, byrefRegs=0000 {}, gcvars, byref
+-            lui            a0, 0xD1FFAB1E
+-            addiw          a0, a0, 0xD1FFAB1E
+-            slli           a0, a0, 11
+-            addi           a0, a0, 0xD1FFAB1E
+-            slli           a0, a0, 5
+-            addi           a0, a0, 0xD1FFAB1E
++            auipc          t6, 0xD1FFAB1E
++            ld             a0, 0xD1FFAB1E(t6)
+             jalr           a0		// CORINFO_HELP_POLL_GC
+             j              G_M14595_IG03
+-						;; size=32 bbWeight=0 PerfScore 0.00
++						;; size=16 bbWeight=0 PerfScore 0.00
++RWD00  	dq	00007289114A700Ch
++RWD08  	dq	00007289140B811Eh
++RWD16  	dq	0000728911222846h
+ 
+-; Total bytes of code 128, prolog size 16, PerfScore 0.00, instruction count 32, allocated bytes for code 128 (MethodHash=d5ccc6fc) for method System.Runtime.InteropServices.Marshal:GetLastSystemError():int (Tier1)
++
++; Total bytes of code 80, prolog size 16, PerfScore 0.00, instruction count 17, allocated bytes for code 80 (MethodHash=d5ccc6fc) for method System.Runtime.InteropServices.Marshal:GetLastSystemError():int (Tier1)
+ ; ============================================================
+ 
+ Unwind Info:
+@@ -69,7 +61,7 @@ Unwind Info:
+   E bit             : 0
+   X bit             : 0
+   Vers              : 0
+-  Function Length   : 32 (0x00020) Actual length = 128 (0x000080)
++  Function Length   : 20 (0x00014) Actual length = 80 (0x000050)
+   ---- Epilog scopes ----
+   ---- Scope 0
+   Epilog Start Offset        : 3523193630 (0xd1ffab1e) Actual offset = 3523193630 (0xd1ffab1e) Offset from main function begin = 3523193630 (0xd1ffab1e)
+```
 
 </div></details>
 
 <details>
-<summary>+0 (0.00%) : 12720.dasm - System.String:CompareOrdinal(System.String,System.String):int (Tier1)</summary>
+<summary>+0 (0.00%) : 12672.dasm - Microsoft.CodeAnalysis.CSharp.DataFlowsInWalker:TopState():Microsoft.CodeAnalysis.CSharp.DefiniteAssignmentPass+LocalState:this (Tier0)</summary>
 <div style="margin-left:1em">
 
-Could not find a git executable in PATH
+```diff
+@@ -39,9 +39,9 @@ G_M33760_IG02:        ; bbWeight=1, gcrefRegs=0000 {}, byrefRegs=0000 {}, byref
+             addi           a0, fp, -72
+             lui            a1, 0xD1FFAB1E
+             addiw          a1, a1, 0xD1FFAB1E
+-            slli           a1, a1, 11
++            slli           a1, a1, 13
+             addi           a1, a1, 0xD1FFAB1E
+-            slli           a1, a1, 5
++            slli           a1, a1, 3
+             ld             a1, 0xD1FFAB1E(a1)
+             jalr           a1		// <unknown method>
+ 						;; size=48 bbWeight=1 PerfScore 0.00
+@@ -59,9 +59,9 @@ G_M33760_IG04:        ; bbWeight=1, extend
+             mv             a2, zero, 
+             lui            a3, 0xD1FFAB1E
+             addiw          a3, a3, 0xD1FFAB1E
+-            slli           a3, a3, 11
++            slli           a3, a3, 13
+             addi           a3, a3, 0xD1FFAB1E
+-            slli           a3, a3, 5
++            slli           a3, a3, 3
+             ld             a3, 0xD1FFAB1E(a3)
+             jalr           a3		// <unknown method>
+             ld             a0, -16(fp)
+```
 
 </div></details>
 
 <details>
-<summary>+0 (0.00%) : 12704.dasm - System.Collections.Generic.List`1+Enumerator[System.__Canon]:MoveNext():ubyte:this (Tier1)</summary>
+<summary>+0 (0.00%) : 12624.dasm - System.Reflection.Metadata.Ecma335.GenericParamTableReader:BinarySearchTag(uint,byref):int:this (Tier1)</summary>
 <div style="margin-left:1em">
 
-Could not find a git executable in PATH
+```diff
+@@ -42,9 +42,9 @@ G_M56274_IG02:        ; bbWeight=1, gcrefRegs=0000 {}, byrefRegs=20200 {s1 a7},
+             addi           a6, fp, -8
+             lui            t0, 0xD1FFAB1E
+             addiw          t0, t0, 0xD1FFAB1E
+-            slli           t0, t0, 11
++            slli           t0, t0, 13
+             addi           t0, t0, 0xD1FFAB1E
+-            slli           t0, t0, 5
++            slli           t0, t0, 3
+             ld             t0, 0xD1FFAB1E(t0)
+             jalr           t0		// <unknown method>
+             ; byrRegs -[a0]
+```
 
 </div></details>
 
 <details>
-<summary>+0 (0.00%) : 12688.dasm - System.Linq.Enumerable+EnumerableSorter`2[System.__Canon,System.__Canon]:.ctor(System.Func`2[System.__Canon,System.__Canon],System.Collections.Generic.IComparer`1[System.__Canon],ubyte,System.Linq.Enumerable+EnumerableSorter`1[System.__Canon]):this (Tier0)</summary>
+<summary>+0 (0.00%) : 12608.dasm - Microsoft.CodeAnalysis.PooledObjects.ArrayBuilder`1[Microsoft.CodeAnalysis.CSharp.LocalDataFlowPass`2+VariableIdentifier[Microsoft.CodeAnalysis.CSharp.DefiniteAssignmentPass+LocalState,System.__Canon]]:get_Item(int):Microsoft.CodeAnalysis.CSharp.LocalDataFlowPass`2+VariableIdentifier[Microsoft.CodeAnalysis.CSharp.DefiniteAssignmentPass+LocalState,System.__Canon]:this (Tier0)</summary>
 <div style="margin-left:1em">
 
-Could not find a git executable in PATH
+```diff
+@@ -30,9 +30,9 @@ G_M33145_IG02:        ; bbWeight=1, gcrefRegs=0000 {}, byrefRegs=0000 {}, byref
+             lw             a1, -12(fp)
+             lui            a2, 0xD1FFAB1E
+             addiw          a2, a2, 0xD1FFAB1E
+-            slli           a2, a2, 11
++            slli           a2, a2, 13
+             addi           a2, a2, 0xD1FFAB1E
+-            slli           a2, a2, 5
++            slli           a2, a2, 3
+             ld             a2, 0xD1FFAB1E(a2)
+             lw             zero, 0xD1FFAB1E(a0)
+             jalr           a2		// <unknown method>
+```
 
 </div></details>
 
@@ -106,7 +329,7 @@ Could not find a git executable in PATH
 
 |Collection|Contexts with diffs|Improvements|Regressions|Same size|Improvements (bytes)|Regressions (bytes)|
 |---|--:|--:|--:|--:|--:|--:|
-|test.mch|10,186|<span style="color:green">6,929</span>|<span style="color:red">0</span>|<span style="color:blue">3,257</span>|<span style="color:green">-864,616</span>|<span style="color:red">+0</span>|
+|test.mch|10,187|<span style="color:green">6,864</span>|<span style="color:red">0</span>|<span style="color:blue">3,323</span>|<span style="color:green">-925,312</span>|<span style="color:red">+0</span>|
 
 ---
 
@@ -114,7 +337,7 @@ Could not find a git executable in PATH
 
 |Collection|Contexts with diffs|Improvements|Regressions|Same PerfScore|Improvements (PerfScore)|Regressions (PerfScore)|PerfScore Overall in FullOpts|
 |---|--:|--:|--:|--:|--:|--:|--:|
-|test.mch|10,186|<span style="color:green">0</span>|<span style="color:red">0</span>|<span style="color:blue">10,186</span>|0.00%|0.00%|0.0000%|
+|test.mch|10,187|<span style="color:green">0</span>|<span style="color:red">0</span>|<span style="color:blue">10,187</span>|0.00%|0.00%|0.0000%|
 
 ---
 
@@ -122,7 +345,7 @@ Could not find a git executable in PATH
 
 |Collection|Diffed contexts|MinOpts|FullOpts|Missed, base|Missed, diff|
 |---|--:|--:|--:|--:|--:|
-|test.mch|12,732|10,221|2,511|0 (0.00%)|0 (0.00%)|
+|test.mch|12,733|10,207|2,526|0 (0.00%)|0 (0.00%)|
 
 
 ---
@@ -131,4 +354,3 @@ Could not find a git executable in PATH
 
 
 </div></details>
-
