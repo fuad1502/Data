@@ -1,0 +1,5 @@
+/runtime/.dotnet/sdk/10.0.100-preview.3.25125.5/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.FrameworkReferenceResol
+ution.targets(515,5): error NETSDK1112: The runtime pack for Microsoft.NETCore.App.Runtime.linux-riscv64 was not downloa
+ded. Try running a NuGet restore with the RuntimeIdentifier 'linux-riscv64'. [/runtime/src/tests/Common/XUnitLogChecker/
+XUnitLogChecker.csproj]
+
